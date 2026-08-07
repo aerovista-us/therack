@@ -24,6 +24,7 @@
         { "type": "image", "src": "content/remodel-sos/pages/007.png", "alt": "Episode 7: The dry run" },
         { "type": "image", "src": "content/remodel-sos/pages/008.png", "alt": "Episode 8: The grout debacle" },
         { "type": "video", "src": "content/remodel-sos/video/02_sos.mp4", "poster": "content/remodel-sos/video/posters/02-poster.jpg", "caption": "Story moment", "autoplay": false, "muted": false, "advanceOnEnd": true },
+        { "type": "image", "src": "content/remodel-sos/pages/009.png", "alt": "Episode 9: The water test" },
         { "type": "image", "src": "content/remodel-sos/pages/010.png", "alt": "Episode 10: The permit pileup" },
         { "type": "image", "src": "content/remodel-sos/pages/011.png", "alt": "Episode 11: The supply chain" },
         { "type": "image", "src": "content/remodel-sos/pages/012.png", "alt": "Episode 12: Unexpected deliveries" }
