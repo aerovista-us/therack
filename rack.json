@@ -13,6 +13,7 @@
       "cover": "content/remodel-sos/pages/001.png",
       "tags": ["comedy", "construction", "remodeling"],
       "sequence": [
+        { "type": "image", "src": "content/remodel-sos/pages/000.png", "alt": "Prologue: Famous last words" },
         { "type": "video", "src": "content/remodel-sos/video/00_sos.mp4", "poster": "content/remodel-sos/video/posters/00-poster.jpg", "caption": "Short video", "autoplay": false, "muted": false, "advanceOnEnd": true },
         { "type": "image", "src": "content/remodel-sos/pages/001.png", "alt": "SOS series introduction" },
         { "type": "image", "src": "content/remodel-sos/pages/002.png", "alt": "Episode 2: Where is the tile?" },
@@ -24,6 +25,7 @@
         { "type": "image", "src": "content/remodel-sos/pages/007.png", "alt": "Episode 7: The dry run" },
         { "type": "image", "src": "content/remodel-sos/pages/008.png", "alt": "Episode 8: The grout debacle" },
         { "type": "video", "src": "content/remodel-sos/video/02_sos.mp4", "poster": "content/remodel-sos/video/posters/02-poster.jpg", "caption": "Story moment", "autoplay": false, "muted": false, "advanceOnEnd": true },
+        { "type": "image", "src": "content/remodel-sos/pages/009.png", "alt": "Episode 9: The water test" },
         { "type": "image", "src": "content/remodel-sos/pages/010.png", "alt": "Episode 10: The permit pileup" },
         { "type": "image", "src": "content/remodel-sos/pages/011.png", "alt": "Episode 11: The supply chain" },
         { "type": "image", "src": "content/remodel-sos/pages/012.png", "alt": "Episode 12: Unexpected deliveries" }
