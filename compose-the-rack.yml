@@ -1,0 +1,37 @@
+version: "3.9"
+
+# Vespera Publishing — The Rack (comic library)
+# URL: https://nxcore.tail79107c.ts.net/the-rack/
+# Tailnet open access (no login). Not Funnel / not public internet.
+# Allowlist: Tailscale CGNAT + docker gateway SNAT (Traefik published ports).
+
+networks:
+  gateway:
+    external: true
+
+services:
+  the-rack:
+    image: nginx:alpine
+    container_name: the-rack
+    restart: unless-stopped
+    volumes:
+      - /srv/Collab/mini.shops/the_rack/vespera-the-rack:/usr/share/nginx/html:ro
+      - /srv/Collab/mini.shops/the_rack/vespera-the-rack/nginx-the-rack.conf:/etc/nginx/conf.d/default.conf:ro
+    networks:
+      - gateway
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=gateway
+      - traefik.http.routers.the-rack.rule=Host(`nxcore.tail79107c.ts.net`) && PathPrefix(`/the-rack`)
+      - traefik.http.routers.the-rack.priority=80
+      - traefik.http.routers.the-rack.entrypoints=websecure
+      - traefik.http.routers.the-rack.tls=true
+      - traefik.http.routers.the-rack.middlewares=strip-the-rack,the-rack-allow,secure-headers@file
+      - traefik.http.middlewares.strip-the-rack.stripprefix.prefixes=/the-rack
+      - traefik.http.middlewares.the-rack-allow.ipallowlist.sourcerange=100.64.0.0/10,10.60.8.0/24,127.0.0.1/32,::1/128
+      - traefik.http.services.the-rack.loadbalancer.server.port=80
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://127.0.0.1/ || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
