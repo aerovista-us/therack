@@ -23,7 +23,11 @@
         { "type": "image", "src": "content/remodel-sos/pages/008.png", "alt": "Episode 8: The grout debacle" },
         { "type": "image", "src": "content/remodel-sos/pages/010.png", "alt": "Episode 10: The permit pileup" },
         { "type": "image", "src": "content/remodel-sos/pages/011.png", "alt": "Episode 11: The supply chain" },
-        { "type": "image", "src": "content/remodel-sos/pages/012.png", "alt": "Episode 12: Unexpected deliveries" }
+        { "type": "image", "src": "content/remodel-sos/pages/012.png", "alt": "Episode 12: Unexpected deliveries" },
+        { "type": "video", "src": "content/remodel-sos/video/00_sos.mp4", "poster": "content/remodel-sos/video/posters/00-poster.jpg", "caption": "Bonus scene 1", "autoplay": false, "muted": false, "advanceOnEnd": true },
+        { "type": "video", "src": "content/remodel-sos/video/01_sos.mp4", "poster": "content/remodel-sos/video/posters/01-poster.jpg", "caption": "Bonus scene 2", "autoplay": false, "muted": false, "advanceOnEnd": true },
+        { "type": "video", "src": "content/remodel-sos/video/02_sos.mp4", "poster": "content/remodel-sos/video/posters/02-poster.jpg", "caption": "Bonus scene 3", "autoplay": false, "muted": false, "advanceOnEnd": true },
+        { "type": "video", "src": "content/remodel-sos/video/sos (4).mp4", "poster": "content/remodel-sos/video/posters/03-poster.jpg", "caption": "Bonus scene 4", "autoplay": false, "muted": false, "advanceOnEnd": false }
       ]
     }
   ]
