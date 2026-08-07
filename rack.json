@@ -14,6 +14,7 @@
       "tags": ["comedy", "construction", "remodeling"],
       "sequence": [
         { "type": "video", "src": "content/remodel-sos/video/00_sos.mp4", "poster": "content/remodel-sos/video/posters/00-poster.jpg", "caption": "Short video", "autoplay": false, "muted": false, "advanceOnEnd": true },
+        { "type": "image", "src": "content/remodel-sos/pages/000.png", "alt": "SOS series" },
         { "type": "image", "src": "content/remodel-sos/pages/001.png", "alt": "SOS series introduction" },
         { "type": "image", "src": "content/remodel-sos/pages/002.png", "alt": "Episode 2: Where is the tile?" },
         { "type": "image", "src": "content/remodel-sos/pages/003.png", "alt": "Episode 3: The wrong tile" },
